@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		1174592425E14DED004B1146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174592325E14DED004B1146 /* AppDelegate.swift */; };
 		1174592625E14DED004B1146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174592525E14DED004B1146 /* SceneDelegate.swift */; };
-		1174592825E14DED004B1146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174592725E14DED004B1146 /* ViewController.swift */; };
+		1174592825E14DED004B1146 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174592725E14DED004B1146 /* MainViewController.swift */; };
 		1174592B25E14DED004B1146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174592925E14DED004B1146 /* Main.storyboard */; };
 		1174592D25E14DEF004B1146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174592C25E14DEF004B1146 /* Assets.xcassets */; };
 		1174593025E14DEF004B1146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174592E25E14DEF004B1146 /* LaunchScreen.storyboard */; };
+		1174593E25E14E5D004B1146 /* TrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174593D25E14E5D004B1146 /* TrackingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1174592025E14DED004B1146 /* Track It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Track It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1174592325E14DED004B1146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1174592525E14DED004B1146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1174592725E14DED004B1146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1174592725E14DED004B1146 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1174592A25E14DED004B1146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1174592C25E14DEF004B1146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1174592F25E14DEF004B1146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1174593125E14DEF004B1146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1174593D25E14E5D004B1146 /* TrackingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		1174592225E14DED004B1146 /* Track It */ = {
 			isa = PBXGroup;
 			children = (
+				1174593B25E14E18004B1146 /* Controller */,
+				1174593A25E14E13004B1146 /* View */,
+				1174593925E14E08004B1146 /* Model */,
 				1174592325E14DED004B1146 /* AppDelegate.swift */,
 				1174592525E14DED004B1146 /* SceneDelegate.swift */,
-				1174592725E14DED004B1146 /* ViewController.swift */,
-				1174592925E14DED004B1146 /* Main.storyboard */,
 				1174592C25E14DEF004B1146 /* Assets.xcassets */,
-				1174592E25E14DEF004B1146 /* LaunchScreen.storyboard */,
 				1174593125E14DEF004B1146 /* Info.plist */,
 			);
 			path = "Track It";
+			sourceTree = "<group>";
+		};
+		1174593925E14E08004B1146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1174593D25E14E5D004B1146 /* TrackingManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1174593A25E14E13004B1146 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1174592925E14DED004B1146 /* Main.storyboard */,
+				1174592E25E14DEF004B1146 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1174593B25E14E18004B1146 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1174592725E14DED004B1146 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1174592825E14DED004B1146 /* ViewController.swift in Sources */,
+				1174592825E14DED004B1146 /* MainViewController.swift in Sources */,
 				1174592425E14DED004B1146 /* AppDelegate.swift in Sources */,
+				1174593E25E14E5D004B1146 /* TrackingManager.swift in Sources */,
 				1174592625E14DED004B1146 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dm-innovate.Track-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dm-innovate.Track-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
